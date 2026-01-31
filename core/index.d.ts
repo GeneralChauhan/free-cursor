@@ -1419,6 +1419,8 @@ export interface ContinueUIConfig {
   codeWrap?: boolean;
   showSessionTabs?: boolean;
   continueAfterToolRejection?: boolean;
+  showAdsDuringGeneration?: boolean;
+  adsSlotUrl?: string;
 }
 
 export interface ContextMenuConfig {

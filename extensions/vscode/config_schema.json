@@ -3305,6 +3305,15 @@
               "type": "boolean",
               "description": "If set to true, code in pre blocks will wrap.",
               "default": false
+            },
+            "showAdsDuringGeneration": {
+              "type": "boolean",
+              "description": "If true, show an ad slot above the input while the AI is generating. Requires ui.adsSlotUrl to be set to a hosted page URL (e.g. your AdSense page).",
+              "default": false
+            },
+            "adsSlotUrl": {
+              "type": "string",
+              "description": "URL of a page to load in the ad slot iframe when showAdsDuringGeneration is true (e.g. https://yourdomain.com/ads/continue-slot). The page should contain your ad unit (e.g. Google AdSense)."
             }
           }
         },

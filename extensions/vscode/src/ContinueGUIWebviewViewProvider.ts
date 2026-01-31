@@ -127,6 +127,8 @@ export class ContinueGUIWebviewViewProvider
 
     this.webviewProtocol.webview = panel.webview;
 
+    // If the ad slot iframe (config.ui.adsSlotUrl) fails to load, the host may need to allow
+    // frame-src for that origin via a Content-Security-Policy meta tag here.
     return `<!DOCTYPE html>
     <html lang="en">
       <head>

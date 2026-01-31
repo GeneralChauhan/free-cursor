@@ -45,6 +45,7 @@ import { isJetBrains, isMetaEquivalentKeyPressed } from "../../util";
 import { ToolCallDiv } from "./ToolCallDiv";
 
 import { useStore } from "react-redux";
+import { AdSlot } from "../../components/AdSlot";
 import { BackgroundModeView } from "../../components/BackgroundMode/BackgroundModeView";
 import { CliInstallBanner } from "../../components/CliInstallBanner";
 import FeedbackDialog from "../../components/dialogs/FeedbackDialog";
@@ -464,6 +465,7 @@ export function Chat() {
             </div>
           ))}
       </StepsDiv>
+      <AdSlot />
       <div className={"relative"}>
         <ContinueInputBox
           isMainInput

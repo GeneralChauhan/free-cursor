@@ -132,6 +132,8 @@ export const uiOptionsSchema = z.object({
   displayRawMarkdown: z.boolean().optional(),
   showChatScrollbar: z.boolean().optional(),
   codeWrap: z.boolean().optional(),
+  showAdsDuringGeneration: z.boolean().optional(),
+  adsSlotUrl: z.string().optional(),
 });
 export type UiOptions = z.infer<typeof uiOptionsSchema>;
 

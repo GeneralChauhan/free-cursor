@@ -1031,6 +1031,8 @@ declare global {
     displayRawMarkdown?: boolean;
     showChatScrollbar?: boolean;
     codeWrap?: boolean;
+    showAdsDuringGeneration?: boolean;
+    adsSlotUrl?: string;
   }
   
   interface ContextMenuConfig {
